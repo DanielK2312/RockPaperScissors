@@ -11,6 +11,7 @@ buttons.forEach(element => {
   // add an event listener for each button being clicked
   element.addEventListener('click', function () {
 
+
     // generate a random number to represent the computer's choice
     // inside for loop so a new one generates on each click
     const randomNum = Math.floor(Math.random() * 3);
@@ -39,9 +40,10 @@ buttons.forEach(element => {
         winnerValue.textContent = 'Computer Chose Scissors. Computer Wins this round';
 
       } else if (element.value == 'Paper' && randomNum == 2) {
-        console.log('You both Chose paper, it\'s a draw');
+        // console.log('You both Chose paper, it\'s a draw');
 
         winnerValue.textContent = 'It\'s a draw';
+        console.log(winnerValue.textContent);
 
         // continue;
       } else if (element.value == 'Scissors' && randomNum == 0) {
@@ -82,12 +84,12 @@ buttons.forEach(element => {
     }
     // checks if player wins and sets scores so player cant go further
     if (playerWins === 3) {
-      winnerPrompt.textContent = 'You Win!'
+      winnerValue.textContent = 'You Win!'
       playerScore.textContent = playerWins;
       compScore.textContent = computerWins;
 
     } else if (computerWins === 3) {
-      winnerPrompt.textContent = 'Computer Wins, Try Again!'
+      winnerValue.textContent = 'Computer Wins, Try Again!'
       playerScore.textContent = playerWins;
       compScore.textContent = computerWins;
     }
@@ -101,5 +103,5 @@ resetBtn.addEventListener('click', function () {
   playerScore.textContent = playerWins;
   computerWins = 0;
   compScore.textContent = computerWins;
-  winnerPrompt.textContent = '';
+  winnerValue.textContent = '';
 });
