@@ -86,12 +86,6 @@ buttons.forEach(element => {
       playerScore.textContent = playerWins;
       compScore.textContent = computerWins;
 
-
-      // playerWins = 0;
-      // playerScore.textContent = playerWins;
-      // computerWins = 0;
-      // compScore.textContent = computerWins;
-      // winnerPrompt.textContent = '';
     } else if (computerWins === 3) {
       winnerPrompt.textContent = 'Computer Wins, Try Again!'
       playerScore.textContent = playerWins;
