@@ -1,23 +1,10 @@
-#btn1 {
 
-  height: 50px;
-  width: 100px;
-  display:inline-block;
-}
-
-#btn2 {
-
-  height: 50px;
-  width: 100px;
-  display:inline-block;
-}
-
-#btn3 {
-  height: 50px;
-  width: 100px;
-  display:inline-block;
-}
 
 body {
   text-align: center;
+}
+
+.allBtns {
+  text-align: center;
+  display:inline-block;
 }
